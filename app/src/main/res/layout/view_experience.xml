@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:layout_marginTop="@dimen/xsmall_space"
+        android:layout_marginBottom="@dimen/xsmall_space">
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/xsmall_space">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleTextView"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/small_space"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/small_space"/>
+
+        <TextView
+                android:textSize="@dimen/subtitle_font"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/companyNameTextView"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/small_space"
+                android:layout_marginTop="@dimen/small_space"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                />
+
+        <TextView
+                android:textSize="@dimen/subtitle_font"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/startEndDateTextView"
+                android:layout_marginTop="@dimen/small_space"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/small_space"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionTextView"
+                android:layout_marginTop="@dimen/small_space"
+                app:layout_constraintTop_toBottomOf="@+id/companyNameTextView"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="@dimen/small_space"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/small_space"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/small_space"/>
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationTextView"
+                android:textSize="@dimen/subtitle_font"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/companyNameTextView"
+                android:layout_marginStart="@dimen/small_space"
+                android:layout_marginTop="@dimen/small_space"
+                app:layout_constraintTop_toBottomOf="@+id/titleTextView"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

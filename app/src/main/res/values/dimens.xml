@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="xsmall_space">4dp</dimen>
+    <dimen name="small_space">8dp</dimen>
+    <dimen name="medium_space">16dp</dimen>
+    <dimen name="large_space">32dp</dimen>
+    <dimen name="xlarge_space">48dp</dimen>
+    <dimen name="profile_image_height">256dp</dimen>
+    <dimen name="subtitle_font">14sp</dimen>
+    <dimen name="title_font">20sp</dimen>
+</resources>

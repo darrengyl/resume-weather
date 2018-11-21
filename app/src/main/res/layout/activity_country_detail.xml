@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryNameTextView"
+            android:textStyle="bold"
+            android:textSize="@dimen/title_font"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/small_space"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/small_space"/>
+
+    <TextView
+            android:text="@string/capital_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capitalLabel"
+            android:layout_marginTop="@dimen/medium_space"
+            app:layout_constraintTop_toBottomOf="@+id/countryNameTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/medium_space"/>
+
+    <TextView
+            android:text="@string/population_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/populationLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@+id/capitalLabel"/>
+
+    <TextView
+            android:text="@string/area_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/areaLabel"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@+id/populationLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/medium_space"/>
+
+    <TextView
+            android:text="@string/region_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regionLabel"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@+id/areaLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/medium_space"/>
+
+    <TextView
+            android:text="@string/subregion_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subRegionLabel"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@+id/regionLabel"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/medium_space"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capitalTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/medium_space"
+            app:layout_constraintTop_toBottomOf="@+id/countryNameTextView"
+            android:layout_marginTop="@dimen/medium_space"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/populationTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@+id/capitalTextView"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/areaTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@+id/populationTextView"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/regionTextView"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@+id/areaTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/medium_space"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/subRegionTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginTop="@dimen/small_space"
+            app:layout_constraintTop_toBottomOf="@+id/regionTextView"/>
+
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/errorMessageTextView"
+            android:layout_marginTop="@dimen/large_space"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/small_space"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/small_space"/>
+</android.support.constraint.ConstraintLayout>
