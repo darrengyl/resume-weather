@@ -1,5 +1,6 @@
 package com.interview.darrengu.resumeweather.viewmodel
 
+import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
@@ -12,7 +13,9 @@ import kotlinx.coroutines.*
  * It has a cache of the last queried country
  */
 class CountryDetailViewModel(private val repository: Repository) : ViewModel() {
-    val savedCountryDetail: MutableLiveData<CountryResult> = MutableLiveData()
+    private val savedCountryDetail: MutableLiveData<CountryResult> = MutableLiveData()
+    val readOnlySavedCountryDetail: LiveData<CountryResult>
+        get() = savedCountryDetail
     private val viewModelJob = Job()
     private val uiScope = CoroutineScope(Dispatchers.Main + viewModelJob)
 

@@ -25,7 +25,7 @@ class CountryDetailActivity : AppCompatActivity() {
         val viewModel = ViewModelProviders.of(this, CountryDetailViewModel.Factory(repository))
             .get(CountryDetailViewModel::class.java)
 
-        viewModel.savedCountryDetail.observe(this, Observer { countryResult ->
+        viewModel.readOnlySavedCountryDetail.observe(this, Observer { countryResult ->
             countryResult?.let {
                 when(it) {
                     is CountryResult.OnSuccessfulResult -> {
